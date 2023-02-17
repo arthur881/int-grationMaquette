@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="build.css">
+  <link rel="icon" href="media/invoices.png">
+</head>
+<body>
+  <div class="bodyWrapper">
+  <nav>
+    <div class="navTop">
+      <div class="logo">
+        <img src="media/logoM.png" alt="logoM">
+        <p>inance</p>
+      </div>
+      <div class="dashboard">
+        <img src="media/dashboardIcon.png" alt="dashboard icon">
+        <p>Dashboard</p>
+      </div>
+      <div>
+        <a href="#">
+          <img src="media/invoices.png" alt="Invoices icon">
+          <p>Invoices</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="media/clients.png" alt="Clients icon">
+          <p>Clients</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="media/products.png" alt="Products icon">
+          <p>Products</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="media/messages.png" alt="Messages icon">
+          <p>Messages</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="media/settings.png" alt="Settings icon">
+          <p>Settings</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="media/help.png" alt="Help icon">
+          <p>Help</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="navBottom">
+          <a href="#">
+            <img src="media/logout.png" alt="Logout icon">
+            <p>Logout</p>
+          </a>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <div class="topBar">
+        <h2>Hi, Rogers</h2>
+  
+        <div class="headerCenter">
+          <div class="searchBar">
+            <img src="media/searchIcon.png" alt="search icon">
+            <input type="search" name="Search" placeholder="Search">
+          </div>
+  
+          <img src="media/notifIcon.png" alt="notification icon">
+        </div>
+  
+        <img src="media/profilePic.png" alt="profile pic">
+      </div>
+    </header>
+
+    <section class="mainCenter">
+      <div class="mainCenterTop">
+        <div class="centerTopLeft">
+          <h4>Total balance</h4>
+          <div>
+            <h3>0.97894652</h3>
+            <img src="media/btcTag.png" alt="bitcoin icon">
+          </div>
+          <p>$40,123.56</p>
+        </div>
+        <div class="centerTopRight">
+          <a href="#" class="active">Portfolio</a>
+          <a href="#">Funding</a>
+          <a href="#">Asssets</a>
+          <a href="#">P2P</a>
+        </div>
+      </div>
+
+      <div class="graphWrapper">
+        <div class="topGraph">
+          <div class="topGraphLeft">
+            <p>1H</p>
+            <p>1D</p>
+            <p>3D</p>
+            <p>1W</p>
+            <p>1M</p>
+            <div>
+              <img src="media/calendar.png" alt="calendar icon">
+            </div>
+          </div>
+          <div class="topGraphRight">
+            <div>
+              <img src="media/btcIconLast.png" alt="BTC icon">
+              <p>BTC</p>
+              <img src="media/arrowDown.png" alt="arrow icon">
+            </div>
+            <img src="media/doubleArrow.png" alt="double arrow icon">
+            <div>
+              <img src="media/ethIconLast.png" alt="ETH icon">
+              <p>ETH</p>
+              <img src="media/arrowDown.png" alt="arrow icon">
+            </div>
+          </div>
+        </div>
+        <canvas id="graph"></canvas>
+      </div>
+
+      <div class="mainCenterBottom">
+        <div class="centerBottomTittle">
+          <h4>Recent Transactions</h4>
+          <h4>See all coins</h4>
+        </div>
+        <div class="barInfo">
+          <div>
+            <img src="media/bitcoinRounded.png" alt="bitcoin icon">
+          </div>
+          <div>
+            <p>Bitcoin</p>
+            <p>BTC</p>
+          </div>
+          <div>
+            <p>Market Cap</p>
+            <p class="barInfoP2">$40,243.70</p>
+          </div>
+          <div>
+            <p>24h change</p>
+            <p class="barInfoP3">+1,56</p>
+          </div>
+          <div>
+            <img src="media/wave.png" alt="wave icon">
+          </div>
+          <div>
+            <a href="#">Trade</a>
+          </div>
+        </div>
+        <div class="barInfo">
+          <div>
+            <img src="media/etherIcon.png" alt="bitcoin icon">
+          </div>
+          <div>
+            <p>Etherum </p>
+            <p>ETH</p>
+          </div>
+          <div>
+            <p>Market Cap</p>
+            <p class="barInfoP4">$40,243.70</p>
+          </div>
+          <div>
+            <p>24h change</p>
+            <p class="barInfoP5">+1,56</p>
+          </div>
+          <div>
+            <img src="media/wave2.png" alt="wave icon">
+          </div>
+          <div>
+            <a href="#">Trade</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <div class="asideTop">
+        <h4>Recent Transactions</h4>
+
+        <div class="transactions">
+          <img src="media/tether.png" alt="tether icon">
+          <div>
+            <p>Usdt</p>
+            <p>Recieved</p>
+          </div>
+          <div>
+            <p class="green">+3,546</p>
+            <p>Today, 13:45 pm</p>
+          </div>
+        </div>
+
+        <div class="transactions">
+          <img src="media/bnb.png" alt="bnb icon">
+          <div>
+            <p>BNB</p>
+            <p>buy</p>
+          </div>
+          <div>
+            <p class="green">+ 0.7546</p>
+            <p>Today, 5:45 am</p>
+          </div>
+        </div>
+
+        <div class="transactions">
+          <img src="media/tether.png" alt="tether icon">
+          <div>
+            <p>Lite Coin </p>
+            <p>Withdrawal</p>
+          </div>
+          <div>
+            <p class="red">+ 0.7546</p>
+            <p>Today 7:55 am</p>
+          </div>
+        </div>
+
+        <div class="transactions">
+          <img src="media/btcRoundedColor.png" alt="btc icon">
+          <div>
+            <p>Bitcoin</p>
+            <p>Recieved</p>
+          </div>
+          <div>
+            <p class="green">+ 2.7546</p>
+            <p>Today 8:55 am</p>
+          </div>
+        </div>
+
+        <div class="transactions">
+          <img src="media/EthIcon.png" alt="eth icon">
+          <div>
+            <p>Etherum</p>
+            <p>Recieved</p>
+          </div>
+          <div>
+            <p class="green">+ 1.646</p>
+            <p>Today 10:02 am</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="asideBottom">
+        <h4>Assets</h4>
+          <div class="assetsWrapper">
+            <div class="assetIcon">
+              <img src="media/btcIconWhite.png" alt="btc icon">
+              <p>Bitcoin</p>
+            </div>
+            <div class="assetTxt">
+              <p>121,6450.45</p>
+              <p>BTC</p>
+            </div>
+          </div>
+          <div class="assetsWrapper">
+            <div class="assetIcon">
+              <img src="media/ethIconBlack.png" alt="eth icon">
+              <p>Etherum</p>
+            </div>
+            <div class="assetTxt">
+              <p>143,850.45</p>
+              <p>ETH</p>
+            </div>
+          </div>
+      </div>
+    </aside>
+  </main>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
